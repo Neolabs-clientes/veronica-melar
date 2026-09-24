@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verónica Melar Hair Studio · Peluquería y estilistas en Illescas (Toledo)</title>
+<meta name="description" content="Verónica Melar Hair Studio, peluquería de estilistas en Illescas. Color, mechas, cortes, recogidos, tratamientos Schwarzkopf y estética. 4,5★ con 198 reseñas. Reserva por teléfono: 925 54 28 44.">
+<link rel="canonical" href="https://neolabs-clientes.github.io/veronica-melar/">
+<meta property="og:title" content="Verónica Melar Hair Studio · Estilistas en Illescas">
+<meta property="og:description" content="Color, mechas, cortes, recogidos y estética en Illescas. 4,5★ con 198 reseñas de clientas.">
+<meta property="og:image" content="assets/fotos/local-01.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#141414">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --negro:#141414; --tinta:#1E1E1E; --crema:#FAF7F3; --blanco:#FFFFFF;
+  --madera:#C39B6A; --madera-osc:#A87F4F; --verde:#4F7050; --gris:#6E6E6E;
+  --gris-claro:#E8E4DE; --malva:#6C3A9E;
+  --script:'Great Vibes',cursive; --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --sombra:0 18px 50px rgba(20,20,20,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--crema);color:var(--tinta);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,92vw);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em}
+.script{font-family:var(--script);font-weight:400;line-height:1.05}
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--madera-osc);font-weight:500}
+
+/* ---------- NAV ---------- */
+nav{position:fixed;inset:0 0 auto;z-index:60;padding:18px 0;transition:.45s ease;
+  background:linear-gradient(180deg,rgba(20,20,20,.42),rgba(20,20,20,0));}
+nav.scrolled{background:rgba(250,247,243,.94);backdrop-filter:blur(14px);padding:10px 0;box-shadow:0 1px 0 rgba(20,20,20,.07)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand .n{font-family:var(--script);font-size:1.85rem;color:#fff;transition:.4s}
+.brand .s{font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.82);margin-top:3px}
+nav.scrolled .brand .n{color:var(--negro)}
+nav.scrolled .brand .s{color:var(--gris)}
+.menu{display:flex;gap:30px;align-items:center}
+.menu a{font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.92);position:relative;padding-bottom:3px}
+.menu a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:currentColor;transition:.35s}
+.menu a:hover::after{width:100%}
+nav.scrolled .menu a{color:var(--tinta)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 26px;border-radius:100px;
+  font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;transition:.35s;border:1px solid transparent;cursor:pointer}
+.btn-dark{background:var(--negro);color:#fff}
+.btn-dark:hover{background:var(--madera-osc);transform:translateY(-2px)}
+.btn-line{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-line:hover{background:#fff;color:var(--negro)}
+nav.scrolled .btn-line{border-color:var(--negro);color:var(--negro)}
+nav.scrolled .btn-line:hover{background:var(--negro);color:#fff}
+#burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+#burger span{width:24px;height:1.5px;background:#fff;transition:.3s}
+nav.scrolled #burger span{background:var(--negro)}
+
+/* ---------- HERO ---------- */
+header{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,20,.62),rgba(20,20,20,.42) 45%,rgba(20,20,20,.72))}
+.hero-in{position:relative;z-index:2;color:#fff;padding:120px 0 80px}
+.hero-in .eyebrow{color:rgba(255,255,255,.85)}
+.hero-in h1{font-family:var(--script);font-size:clamp(3.4rem,9vw,7rem);margin:14px 0 6px;text-shadow:0 6px 40px rgba(0,0,0,.35)}
+.hero-in .sub{font-family:var(--serif);font-size:clamp(1.05rem,2.4vw,1.6rem);font-style:italic;color:rgba(255,255,255,.94);margin-bottom:26px}
+.hero-stars{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);
+  backdrop-filter:blur(8px);border-radius:100px;padding:9px 20px;margin-bottom:32px;font-size:.86rem}
+.hero-stars b{font-weight:600}
+.stars{color:#E0B457;letter-spacing:2px}
+.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.7);font-size:.66rem;letter-spacing:.3em}
+.hero-scroll::after{content:'';display:block;width:1px;height:44px;margin:10px auto 0;background:linear-gradient(180deg,rgba(255,255,255,.8),transparent)}
+
+/* ---------- FRANJA ---------- */
+.franja{background:var(--negro);color:#fff;padding:17px 0;overflow:hidden;white-space:nowrap}
+.franja-in{display:inline-flex;gap:44px;animation:slide 32s linear infinite;font-size:.76rem;letter-spacing:.26em;text-transform:uppercase}
+.franja-in span{opacity:.82}
+.franja-in i{color:var(--madera);font-style:normal}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- SECCIONES ---------- */
+section{padding:clamp(70px,10vw,130px) 0}
+.sec-head{max-width:660px;margin-bottom:54px}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.2rem);margin:12px 0 14px}
+.sec-head p{color:var(--gris);font-size:1.02rem}
+.sec-head.center{margin-inline:auto;text-align:center}
+
+/* ESTUDIO */
+.estudio{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,76px);align-items:center}
+.estudio-img{position:relative;border-radius:4px;overflow:hidden;box-shadow:var(--sombra)}
+.estudio-img img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.estudio-tag{position:absolute;bottom:18px;left:18px;background:rgba(250,247,243,.95);padding:14px 20px;border-radius:3px}
+.estudio-tag b{font-family:var(--serif);font-size:1.5rem;display:block;line-height:1}
+.estudio-tag span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gris)}
+.estudio-txt p{color:#4A4A4A;margin-bottom:18px}
+.datos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px;padding-top:28px;border-top:1px solid var(--gris-claro)}
+.dato b{font-family:var(--serif);font-size:2.1rem;display:block;line-height:1;color:var(--negro)}
+.dato span{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gris)}
+
+/* SERVICIOS */
+#servicios{background:var(--blanco)}
+.grid-serv{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}
+.serv{background:var(--crema);padding:34px 30px;border-radius:4px;border:1px solid var(--gris-claro);transition:.4s;position:relative;overflow:hidden}
+.serv::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--madera);transform:scaleX(0);transform-origin:left;transition:.45s}
+.serv:hover{transform:translateY(-5px);box-shadow:var(--sombra);background:#fff}
+.serv:hover::before{transform:scaleX(1)}
+.serv .ico{font-size:1.5rem;margin-bottom:14px}
+.serv h3{font-size:1.32rem;margin-bottom:9px}
+.serv p{font-size:.92rem;color:var(--gris)}
+.serv .cons{display:inline-block;margin-top:16px;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--madera-osc);border-bottom:1px solid var(--madera)}
+
+/* GALERIA */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal figure{border-radius:3px;overflow:hidden;cursor:pointer;position:relative;background:var(--gris-claro)}
+.gal img{width:100%;height:100%;object-fit:cover;aspect-ratio:1;transition:.7s cubic-bezier(.2,.7,.2,1)}
+.gal figure:hover img{transform:scale(1.07)}
+.gal figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gal figure:nth-child(6){grid-column:span 2}
+.gal figure:nth-child(1) img,.gal figure:nth-child(6) img{aspect-ratio:auto;height:100%}
+
+/* RESEÑAS */
+#resenas{background:var(--negro);color:#fff}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.res{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);padding:34px 30px;border-radius:4px;transition:.4s}
+.res:hover{background:rgba(255,255,255,.09);transform:translateY(-4px)}
+.res .stars{margin-bottom:14px;font-size:1rem}
+.res p{font-family:var(--serif);font-size:1.14rem;font-style:italic;line-height:1.6;color:rgba(255,255,255,.93);margin-bottom:20px}
+.res .autor{display:flex;align-items:center;gap:12px;font-size:.84rem;color:rgba(255,255,255,.7)}
+.res .av{width:38px;height:38px;border-radius:50%;background:var(--madera);color:var(--negro);display:grid;place-items:center;font-weight:600;font-size:.9rem}
+.res-nota{margin-top:34px;text-align:center;font-size:.8rem;color:rgba(255,255,255,.5)}
+
+/* HORARIO */
+.hor{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.hor-lista{background:#fff;border:1px solid var(--gris-claro);border-radius:4px;overflow:hidden;box-shadow:var(--sombra)}
+.hor-lista li{display:flex;justify-content:space-between;padding:15px 26px;border-bottom:1px solid var(--gris-claro);font-size:.94rem}
+.hor-lista li:last-child{border-bottom:0}
+.hor-lista li.hoy{background:var(--crema);font-weight:500}
+.hor-lista li.hoy .dia::after{content:'· hoy';color:var(--madera-osc);font-size:.72rem;letter-spacing:.14em;margin-left:9px;text-transform:uppercase}
+.hor-lista .cerrado{color:#B4483F}
+.hor-info p{color:var(--gris);margin-bottom:16px}
+.hor-info .tel{font-family:var(--serif);font-size:1.9rem;color:var(--negro);display:block;margin-bottom:6px}
+
+/* CONTACTO */
+#contacto{background:var(--blanco)}
+.cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,54px)}
+.mapa{border-radius:4px;overflow:hidden;min-height:380px;border:1px solid var(--gris-claro);box-shadow:var(--sombra)}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+form{background:var(--crema);padding:clamp(26px,4vw,40px);border-radius:4px;border:1px solid var(--gris-claro)}
+.campo{margin-bottom:16px}
+.campo label{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);margin-bottom:7px}
+.campo input,.campo select,.campo textarea{width:100%;padding:13px 15px;border:1px solid var(--gris-claro);background:#fff;border-radius:3px;font-family:var(--sans);font-size:.94rem;color:var(--tinta);transition:.3s}
+.campo input:focus,.campo select:focus,.campo textarea:focus{outline:0;border-color:var(--madera);box-shadow:0 0 0 3px rgba(195,155,106,.14)}
+.campo textarea{resize:vertical;min-height:96px}
+.form-nota{font-size:.76rem;color:var(--gris);margin-top:14px;text-align:center}
+
+/* CTA FINAL */
+.cta{background:var(--negro);color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(195,155,106,.16),transparent 62%)}
+.cta .wrap{position:relative}
+.cta h2{font-family:var(--script);font-size:clamp(2.4rem,6vw,4.4rem);margin-bottom:16px}
+.cta p{color:rgba(255,255,255,.78);max-width:560px;margin:0 auto 32px}
+.cta .hero-cta{justify-content:center}
+
+/* FOOTER */
+footer{background:#0E0E0E;color:rgba(255,255,255,.62);padding:54px 0 34px;font-size:.86rem}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:34px;margin-bottom:36px}
+footer .brand .n{color:#fff;font-size:1.7rem}
+footer .brand .s{color:rgba(255,255,255,.5)}
+.foot h4{font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#fff;margin-bottom:14px;font-weight:500}
+.foot a:hover{color:var(--madera)}
+.foot ul{list-style:none}
+.foot li{margin-bottom:9px}
+.legal{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.78rem}
+.legal-links{display:flex;gap:20px;flex-wrap:wrap}
+
+/* WHATSAPP FLOTANTE */
+.wa{position:fixed;right:22px;bottom:22px;z-index:70;width:56px;height:56px;border-radius:50%;background:#25D366;
+  display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.4);transition:.35s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:29px;height:29px;fill:#fff}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .estudio,.hor,.cont-grid,.foot{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .gal figure:nth-child(1){grid-column:span 2;grid-row:span 1}
+  .gal figure:nth-child(6){grid-column:span 2}
+  .menu{position:fixed;inset:0 0 0 auto;width:min(78vw,320px);background:var(--crema);flex-direction:column;
+    justify-content:center;gap:26px;transform:translateX(100%);transition:.45s;box-shadow:-20px 0 60px rgba(0,0,0,.16)}
+  .menu.open{transform:none}
+  .menu a{color:var(--negro)!important;font-size:1rem}
+  #burger{display:flex;z-index:71}
+  nav.scrolled #burger span,body.menu-open #burger span{background:var(--negro)}
+  body.menu-open #burger span{background:var(--negro)}
+  nav:not(.scrolled) #burger span{background:#fff}
+  body.menu-open nav:not(.scrolled) #burger span{background:var(--negro)}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Verónica Melar Hair Studio, inicio">
+      <span class="n">Verónica Melar</span>
+      <span class="s">Hair Studio · Illescas</span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#estudio">El estudio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#resenas">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a class="btn btn-line" href="tel:+34925542844">Llamar</a>
+    <button id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header>
+  <div class="hero-bg"><img src="assets/fotos/local-01.jpg" alt="Interior del estudio Verónica Melar en Illescas"></div>
+  <div class="hero-in wrap">
+    <p class="eyebrow">Peluquería y estilistas · Illescas, Toledo</p>
+    <h1>Verónica Melar</h1>
+    <p class="sub">Tu pelo, en las mejores manos</p>
+    <div class="hero-stars"><span class="stars">★★★★★</span> <b>4,5</b> <span>· 198 reseñas en Google</span></div>
+    <div class="hero-cta">
+      <a class="btn btn-dark" href="#contacto">Pedir cita</a>
+      <a class="btn btn-line" href="#servicios">Ver servicios</a>
+    </div>
+  </div>
+  <div class="hero-scroll">DESCUBRE</div>
+</header>
+
+<div class="franja" aria-hidden="true">
+  <div class="franja-in">
+    <span>Corte y peinado</span><i>·</i><span>Color y mechas</span><i>·</i><span>Tratamientos Schwarzkopf</span><i>·</i><span>Recogidos y novias</span><i>·</i><span>Manicura</span><i>·</i><span>Estilismo</span><i>·</i>
+    <span>Corte y peinado</span><i>·</i><span>Color y mechas</span><i>·</i><span>Tratamientos Schwarzkopf</span><i>·</i><span>Recogidos y novias</span><i>·</i><span>Manicura</span><i>·</i><span>Estilismo</span><i>·</i>
+  </div>
+</div>
+
+<section id="estudio">
+  <div class="wrap estudio">
+    <div class="estudio-img reveal">
+      <img src="assets/fotos/local-02.jpg" alt="Rincón del estudio con el rótulo Verónica Melar Estilistas" loading="lazy">
+      <div class="estudio-tag"><b>198</b><span>reseñas en Google</span></div>
+    </div>
+    <div class="estudio-txt reveal">
+      <p class="eyebrow">El estudio</p>
+      <h2>Un salón luminoso en el centro de Illescas</h2>
+      <p>En la esquina de la Calle Borox con la Calle Alameda, en Illescas. Un espacio amplio, lleno de luz, con espejos, madera y plantas: el sitio donde te sientas a que te mimen y sales con el pelo que querías.</p>
+      <p>Trabajamos con producto profesional <b>Schwarzkopf</b> y con una idea sencilla: escucharte primero, asesorarte con sinceridad y no parar hasta que el resultado te encaje. Llevamos años con clientas que no se van a otro sitio, y eso para nosotras lo dice todo.</p>
+      <div class="datos">
+        <div class="dato"><b>4,5★</b><span>Valoración</span></div>
+        <div class="dato"><b>198</b><span>Reseñas</span></div>
+        <div class="dato"><b>Schwarzkopf</b><span>Producto profesional</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow">Servicios</p>
+      <h2>Todo tu pelo, y tus manos</h2>
+      <p>Corte, color y tratamientos con criterio profesional. Si dudas de qué te conviene, te lo decimos claro y sin compromiso.</p>
+    </div>
+    <div class="grid-serv">
+      <article class="serv reveal"><div class="ico">✂️</div><h3>Corte y peinado</h3><p>Cortes de mujer y de hombre, con el acabado que mejor te sienta según tu pelo y tu cara. Incluye lavado y peinado.</p><span class="cons">Consultar</span></article>
+      <article class="serv reveal"><div class="ico">🎨</div><h3>Color y mechas</h3><p>Coloración, mechas, balayage y cambios de tono. Estudiamos tu base antes de tocar nada, para que el color quede uniforme y dure.</p><span class="cons">Consultar</span></article>
+      <article class="serv reveal"><div class="ico">💧</div><h3>Tratamientos</h3><p>Hidratación, reparación y cuidado del cabello con la gama profesional Schwarzkopf. Ideal para pelo castigado por el color.</p><span class="cons">Consultar</span></article>
+      <article class="serv reveal"><div class="ico">👰</div><h3>Recogidos y novias</h3><p>Recogidos, trenzas y peinados de evento, con prueba previa para que el día señalado vayas tranquila y segura.</p><span class="cons">Consultar</span></article>
+      <article class="serv reveal"><div class="ico">💅</div><h3>Manicura y estética</h3><p>Manicura y decoración de uñas para completar el look. Pídelo junto con tu cita de pelo y sales lista.</p><span class="cons">Consultar</span></article>
+      <article class="serv reveal"><div class="ico">✨</div><h3>Alisados y cambios</h3><p>¿Te aburriste de tu pelo? Valoramos lo que se puede hacer sin estropearlo, con un plan realista desde la primera visita.</p><span class="cons">Consultar</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow">Galería</p>
+      <h2>Fotos del estudio</h2>
+      <p>Así es el salón y así trabajamos. Fotos reales de nuestro día a día en Illescas.</p>
+    </div>
+    <div class="gal reveal">
+      <figure><img src="assets/fotos/local-01.jpg" alt="Sala del estudio con espejos y lavacabezas" loading="lazy"></figure>
+      <figure><img src="assets/fotos/local-03.jpg" alt="Detalle de las lámparas y el póster de Schwarzkopf" loading="lazy"></figure>
+      <figure><img src="assets/fotos/local-05.jpg" alt="Interior del estudio con columnas de madera" loading="lazy"></figure>
+      <figure><img src="assets/fotos/local-08.jpg" alt="Rincón con plantas del estudio" loading="lazy"></figure>
+      <figure><img src="assets/fotos/local-04.jpg" alt="Manicura decorada realizada en el estudio" loading="lazy"></figure>
+      <figure><img src="assets/fotos/local-06.jpg" alt="Corte de caballero en el estudio" loading="lazy"></figure>
+      <figure><img src="assets/fotos/local-02.jpg" alt="Rótulo Verónica Melar Estilistas" loading="lazy"></figure>
+      <figure><img src="assets/fotos/local-07.jpg" alt="Estilista atendiendo a una clienta" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="resenas">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow" style="color:var(--madera)">Opiniones</p>
+      <h2 style="color:#fff">Lo que dicen nuestras clientas</h2>
+      <p style="color:rgba(255,255,255,.7)">Reseñas reales publicadas en Google. 4,5 sobre 5 en 198 valoraciones.</p>
+    </div>
+    <div class="res-grid">
+      <article class="res reveal">
+        <div class="stars">★★★★★</div>
+        <p>«Llevo tiempo viniendo a esta peluquería y no puedo estar más contenta. El trato es estupendo y el ambiente muy agradable. Cristina es una profesional increíble, cuidadosa, perfeccionista y con muy buen gusto.»</p>
+        <div class="autor"><span class="av">M</span> Maria Martin Ugena</div>
+      </article>
+      <article class="res reveal">
+        <div class="stars">★★★★★</div>
+        <p>«Desde que descubrí esta peluquería, no he vuelto a poner mi pelo en otras manos. Desde el primer día me hicieron sentir súper cómoda, con un trato cercano, amable y muy profesional. Siempre se toman el tiempo para escucharme.»</p>
+        <div class="autor"><span class="av">H</span> Helena Carrasco Rivera</div>
+      </article>
+      <article class="res reveal">
+        <div class="stars">★★★★★</div>
+        <p>«Muy recomendable. Me atendió Cristina y no puedo estar más contenta. Quería un cambio, le expliqué mi idea, ella me recomendó, vimos juntas imágenes y el resultado fue justo lo que yo quería.»</p>
+        <div class="autor"><span class="av">S</span> Sara Samper</div>
+      </article>
+    </div>
+    <p class="res-nota">«Grandes profesionales, siempre me dejo aconsejar y aciertan de lleno» · «Llevo 15 años yendo y siempre salgo contenta»</p>
+  </div>
+</section>
+
+<section id="horario">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Horario</p>
+      <h2>Cuándo estamos</h2>
+      <p>Atendemos con cita previa, para poder dedicarte el tiempo que necesitas.</p>
+    </div>
+    <div class="hor">
+      <ul class="hor-lista reveal" id="hor-lista">
+        <li data-d="1"><span class="dia">Lunes</span><span>10:00 – 20:00</span></li>
+        <li data-d="2"><span class="dia">Martes</span><span>10:00 – 20:00</span></li>
+        <li data-d="3"><span class="dia">Miércoles</span><span class="cerrado">Cerrado</span></li>
+        <li data-d="4"><span class="dia">Jueves</span><span>10:00 – 20:00</span></li>
+        <li data-d="5"><span class="dia">Viernes</span><span>10:00 – 20:00</span></li>
+        <li data-d="6"><span class="dia">Sábado</span><span>9:30 – 14:30</span></li>
+        <li data-d="0"><span class="dia">Domingo</span><span class="cerrado">Cerrado</span></li>
+      </ul>
+      <div class="hor-info reveal">
+        <p class="eyebrow">Reservas</p>
+        <h3 style="font-size:1.7rem;margin:10px 0 14px">Pide tu cita por teléfono</h3>
+        <a class="tel" href="tel:+34925542844">925 54 28 44</a>
+        <p>Calle Borox, esquina C. Alameda 1<br>45200 Illescas, Toledo</p>
+        <p>Si prefieres escribirnos, déjanos tus datos en el formulario y te llamamos nosotras.</p>
+        <a class="btn btn-dark" href="#contacto">Pedir cita</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2>Te esperamos en Illescas</h2>
+      <p>Estamos en la esquina de la Calle Borox con la Calle Alameda. Ven a vernos o escríbenos.</p>
+    </div>
+    <div class="cont-grid">
+      <div class="mapa reveal">
+        <iframe title="Mapa de Verónica Melar Hair Studio en Illescas" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Calle%20Borox%2C%20C.%20Alameda%2C%201%2C%2045200%20Illescas%2C%20Toledo&output=embed"></iframe>
+      </div>
+      <form class="reveal" id="form" novalidate>
+        <div class="campo"><label for="n">Nombre</label><input id="n" name="nombre" required placeholder="Tu nombre"></div>
+        <div class="campo"><label for="t">Teléfono</label><input id="t" name="telefono" required placeholder="Para llamarte"></div>
+        <div class="campo"><label for="s">¿Qué te apetece?</label>
+          <select id="s" name="servicio">
+            <option>Corte y peinado</option><option>Color y mechas</option><option>Tratamientos</option>
+            <option>Recogido o novia</option><option>Manicura y estética</option><option>Otro / no lo sé</option>
+          </select></div>
+        <div class="campo"><label for="m">Mensaje</label><textarea id="m" name="mensaje" placeholder="Cuéntanos qué quieres (o qué día te encaja mejor)"></textarea></div>
+        <button class="btn btn-dark" type="submit" style="width:100%;justify-content:center">Enviar por WhatsApp</button>
+        <p class="form-nota">Se abrirá WhatsApp con tu mensaje ya escrito. Nada se envía sin que tú lo confirmes.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2 class="script">Nos vemos en el estudio</h2>
+    <p>Pide tu cita y déjanos hacer lo que mejor se nos da: que salgas de aquí con una sonrisa.</p>
+    <div class="hero-cta">
+      <a class="btn btn-dark" href="tel:+34925542844">Llamar 925 54 28 44</a>
+      <a class="btn btn-line" href="#contacto">Pedir cita</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand"><span class="n">Verónica Melar</span><span class="s">Hair Studio · Illescas</span></div>
+        <p style="margin-top:16px;max-width:320px">Peluquería y estilistas en el centro de Illescas. Color, cortes, tratamientos y estética con producto profesional Schwarzkopf.</p>
+      </div>
+      <div>
+        <h4>Dónde</h4>
+        <ul>
+          <li>Calle Borox, esquina C. Alameda 1</li>
+          <li>45200 Illescas, Toledo</li>
+          <li><a href="tel:+34925542844">925 54 28 44</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <ul>
+          <li>Lunes a viernes: 10:00 – 20:00</li>
+          <li>Miércoles: cerrado</li>
+          <li>Sábado: 9:30 – 14:30</li>
+          <li>Domingo: cerrado</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> Verónica Melar Hair Studio · Illescas</span>
+      <div class="legal-links">
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="politica-privacidad.html">Privacidad</a>
+        <a href="politica-cookies.html">Cookies</a>
+        <a href="declaracion-accesibilidad.html">Accesibilidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/34658237988?text=Hola%2C%20he%20visto%20la%20web%20de%20Ver%C3%B3nica%20Melar%20Hair%20Studio%20y%20quiero%20pedir%20cita" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.6-.9-2.2-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 1.9 3 4.7 4.1 2.3.9 2.8.8 3.3.7.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.5C3.5 7.4 7.4 3.5 12 3.5S20.5 7.4 20.5 12 16.6 20.2 12 20.2z"/></svg>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HairSalon",
+  "name":"Verónica Melar Hair Studio",
+  "description":"Peluquería y estilistas en Illescas (Toledo). Corte, color, mechas, tratamientos Schwarzkopf, recogidos y estética.",
+  "image":"https://neolabs-clientes.github.io/veronica-melar/assets/fotos/local-01.jpg",
+  "url":"https://neolabs-clientes.github.io/veronica-melar/",
+  "telephone":"+34925542844",
+  "priceRange":"€€",
+  "address":{"@type":"PostalAddress","streetAddress":"Calle Borox, esquina C. Alameda 1","addressLocality":"Illescas","addressRegion":"Toledo","postalCode":"45200","addressCountry":"ES"},
+  "geo":{"@type":"GeoCoordinates","latitude":40.1216,"longitude":-3.8465},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"198","bestRating":"5"},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday"],"opens":"10:00","closes":"20:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:30","closes":"14:30"}
+  ],
+  "areaServed":{"@type":"City","name":"Illescas"},
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Corte y peinado"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Color y mechas"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tratamientos capilares"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Recogidos y novias"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Manicura y estética"}}
+  ]
+}
+</script>
+
+<script>
+// nav
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 70), {passive:true});
+// menu movil
+const burger = document.getElementById('burger'), menu = document.getElementById('menu');
+burger.addEventListener('click', () => { menu.classList.toggle('open'); document.body.classList.toggle('menu-open'); });
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); document.body.classList.remove('menu-open'); }));
+// reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+// dia actual en el horario
+const hoy = new Date().getDay();
+const li = document.querySelector('#hor-lista li[data-d="' + hoy + '"]');
+if (li) li.classList.add('hoy');
+// año
+document.getElementById('year').textContent = new Date().getFullYear();
+// formulario -> whatsapp (mensaje ya escrito)
+document.getElementById('form').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = e.target;
+  const nombre = f.nombre.value.trim(), tel = f.telefono.value.trim();
+  if (!nombre || !tel) { alert('Necesitamos tu nombre y un teléfono para poder llamarte.'); return; }
+  const msg = 'Hola, quiero pedir cita en Verónica Melar Hair Studio.\n\n'
+    + 'Nombre: ' + nombre + '\n'
+    + 'Teléfono: ' + tel + '\n'
+    + 'Servicio: ' + f.servicio.value + '\n'
+    + (f.mensaje.value.trim() ? 'Mensaje: ' + f.mensaje.value.trim() + '\n' : '');
+  window.open('https://wa.me/34658237988?text=' + encodeURIComponent(msg), '_blank');
+});
+</script>
+</body>
+</html>
